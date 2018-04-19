@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardnotification"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+             android:id="@+id/imagenotification"
+            android:layout_height="130dp"
+            android:src="@drawable/coveer"
+            android:layout_below="@+id/addwish"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+           android:layout_marginBottom="10dp"
+            ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:id="@+id/timetext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@+id/timetext"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/titletextnot"
+                android:text="THIS IS THE TITLE"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/titletextnot"
+                android:src="@drawable/ic_wishlist"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titletextnot"
+                android:layout_marginLeft="45dp"
+                android:id="@+id/addwish"
+                android:text="Add To Wishlist"
+                />
+        </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+</RelativeLayout>

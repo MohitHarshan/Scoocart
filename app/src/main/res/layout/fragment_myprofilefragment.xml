@@ -1,0 +1,192 @@
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mohit.scoocart.Myprofilefragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:id="@+id/rel"
+          android:background="@drawable/coveer"
+          android:backgroundTintMode="src_over"
+          android:backgroundTint="#6F000000"
+          >
+      </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="50dp"
+              android:id="@+id/profilepic"
+              android:src="@drawable/user"
+              app:border_color="@color/white"
+              app:border_width="2dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilepic"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:text="Update profile photo"
+            android:textSize="10dp"
+            android:id="@+id/profilepictext"
+            android:textColor="@color/white"
+
+            />
+<ImageView
+    android:layout_width="22dp"
+    android:layout_height="22dp"
+    android:id="@+id/profilepicbutton"
+    android:layout_below="@+id/profilepic"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="50dp"
+    android:src="@drawable/edits"
+    />
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="20dp"
+    android:id="@+id/coveerpicbutton"
+    android:layout_marginRight="150dp"
+    android:src="@drawable/ic_camera"
+
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="25dp"
+    android:text="Update cover photo"
+    android:textColor="@color/white"
+
+    />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Full Name"
+            android:id="@+id/fullname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_below="@+id/fullname"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:id="@+id/profilegendertext"
+            android:layout_marginLeft="50dp"
+
+            />
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/gendertv"
+            android:layout_marginTop="225dp"
+
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Male"
+                android:textColor="#000000"
+                android:shadowColor="@color/Orange"
+                android:id="@+id/radioButton"
+
+                android:layout_marginLeft="80dp"
+                android:checked="false"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Female"
+                android:id="@+id/radioButton2"
+                android:shadowColor="@color/Orange"
+
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:checked="false"
+                android:textSize="15dp"
+                />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilegendertext"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Add Address"
+            android:id="@+id/address"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="E-mail Addess"
+            android:id="@+id/emailaddress"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailaddress"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Mobile Number"
+            android:id="@+id/mobileno"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileno"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Location"
+            android:id="@+id/location"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="SAVE"
+            android:background="@drawable/buttonprofile"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,112 @@
+<android.support.v4.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohit.scoocart.Home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" />
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+       android:layout_alignBottom="@+id/pager"
+        android:layout_height="48dp"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/bycategory"
+        android:layout_below="@+id/indicator"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="SHOP BY CATEGORY"
+        />
+<android.support.v7.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/bycategory"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/recyclerone"
+
+    ></android.support.v7.widget.RecyclerView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OFFER OF THE DAY"
+    android:textStyle="bold"
+    android:id="@+id/offertext"
+    android:layout_below="@+id/recyclerone"
+    android:layout_marginTop="20dp"
+
+
+    />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_toRightOf="@+id/offertext"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/recyclerone"
+            android:layout_marginTop="30dp"
+            android:background="#c0c0c0"/>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclertwo"
+    android:layout_below="@+id/offertext"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    >
+</android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGHLIGHT"
+            android:id="@+id/highlight"
+            android:textStyle="bold"
+            android:layout_below="@+id/recyclertwo"
+            android:layout_marginTop="20dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_toRightOf="@+id/highlight"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/recyclertwo"
+            android:layout_marginTop="30dp"
+            android:background="#c0c0c0"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/highlight"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerthree"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

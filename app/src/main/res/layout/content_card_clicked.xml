@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mohit.scoocart.cardclick">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:elevation="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/clickcard"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/wishes"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_wishlist"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="340dp"
+                    ></CheckBox>
+
+                <ImageView
+                    android:id="@+id/pager1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator1"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="48dp"
+                  android:layout_alignBottom="@+id/pager1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indicator1"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/producttitle"
+                    android:text="Camel Mountain"
+                    android:textSize="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/producttitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="Premium school bags "
+                    android:id="@+id/productsubtitile"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/productsubtitile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#1B751D"
+                    android:text="2500"
+                    android:textSize="15dp"
+                    android:id="@+id/productprice"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/productsubtitile"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/productprice"
+                    android:src="@drawable/ic_rupees"
+                    android:layout_marginLeft="3dp"
+
+                    />
+                <View
+                    android:layout_width="fill_parent"
+                    android:id="@+id/view"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/productprice"
+                    android:layout_marginTop="20dp"
+                    android:background="#c0c0c0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="SIZE"
+                    android:id="@+id/sizetext"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/view"
+                    />
+
+                <ToggleButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:button="@drawable/toggle_selector"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textOn="@null"
+                    android:textOff="@null"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:id="@+id/toggleButton"
+                    android:layout_below="@+id/sizetext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:id="@+id/textView"
+                    android:layout_alignLeft="@+id/toggleButton"
+                    android:layout_alignTop="@+id/toggleButton"
+                    android:layout_alignRight="@+id/toggleButton"
+                    android:layout_alignBottom="@+id/toggleButton"
+                    android:gravity="center"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:button="@drawable/toggle_selector"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textOn="@null"
+                    android:textOff="@null"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:id="@+id/toggleButton1"
+                    android:layout_below="@+id/sizetext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:id="@+id/textView1"
+                    android:layout_alignLeft="@+id/toggleButton1"
+                    android:layout_alignTop="@+id/toggleButton1"
+                    android:layout_alignRight="@+id/toggleButton1"
+                    android:layout_alignBottom="@+id/toggleButton1"
+                    android:gravity="center"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:button="@drawable/toggle_selector"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textOn="@null"
+                    android:textOff="@null"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:id="@+id/toggleButton2"
+                    android:layout_below="@+id/sizetext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:id="@+id/textView2"
+                    android:layout_alignLeft="@+id/toggleButton2"
+                    android:layout_alignTop="@+id/toggleButton2"
+                    android:layout_alignRight="@+id/toggleButton2"
+                    android:layout_alignBottom="@+id/toggleButton2"
+                    android:gravity="center"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:button="@drawable/toggle_selector"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textOn="@null"
+                    android:textOff="@null"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:id="@+id/toggleButton3"
+                    android:layout_below="@+id/sizetext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="120dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XL"
+                    android:id="@+id/textView3"
+                    android:layout_alignLeft="@+id/toggleButton3"
+                    android:layout_alignTop="@+id/toggleButton3"
+                    android:layout_alignRight="@+id/toggleButton3"
+                    android:layout_alignBottom="@+id/toggleButton3"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/productcolor"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/toggleButton"
+                    android:text="COLOR"
+                    android:layout_marginTop="25dp"
+                    />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productcolor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/check1"
+                    android:buttonTint="#ED1C24"
+
+                    />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productcolor"
+                    android:layout_marginLeft="50dp"
+                    android:buttonTint="#00A651"
+
+                    />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productcolor"
+                    android:layout_marginLeft="80dp"
+                    android:buttonTint="#00AEEF"
+
+                    />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productcolor"
+                    android:layout_marginLeft="110dp"
+                    android:buttonTint="#E23370"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/check1"
+                    android:textStyle="bold"
+                    android:id="@+id/infotext"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="INFO"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="620dp"
+
+                    android:text="Product id:"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="640dp"
+                    android:text="Brand:"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="660dp"
+                    android:text="Category:"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="620dp"
+                    android:layout_marginLeft="95dp"
+                    android:text="sk141422"
+                    android:id="@+id/productid"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="640dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="Camel Mountain"
+                    android:id="@+id/brand"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="660dp"
+                    android:layout_marginLeft="95dp"
+                    android:text="Stationary Items"
+                    android:id="@+id/category"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="FREE SIZE"
+                    android:textColor="@color/Orange"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/freesizebutton"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/clickcard"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/clickcard3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="PRODUCT DETAILS"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/details"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginBottom="30dp"
+
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            
+            android:layout_below="@+id/clickcard3"
+
+            >
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_cartblack"
+            android:text="ADD TO CART"
+            android:background="@drawable/item_selector"
+            android:layout_height="50dp"
+            />
+            <Button
+                android:id="@+id/buynow"
+                android:layout_width="0dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_buynow"
+                android:background="@drawable/item_selector"
+                android:layout_weight="1"
+                android:text="BUY NOW"
+
+                android:layout_height="50dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

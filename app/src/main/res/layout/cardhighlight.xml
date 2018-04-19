@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:id="@+id/cardhighlight"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offer2"
+                android:layout_marginTop="10dp"
+
+                android:text="20% off"
+
+                android:textSize="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FE0036"
+                />
+
+
+            <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="15dp"
+                android:button="@drawable/selector_check"
+                android:layout_marginTop="8dp"
+
+                android:id="@+id/wishlistimage"
+
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/textbook"
+                android:id="@+id/image3card"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image3card"
+                android:text="NEW ARRIVALS"
+                android:layout_marginTop="5dp"
+                android:id="@+id/text3card"
+                android:textStyle="bold"
+
+                android:textSize="8dp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3card"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="8dp"
+                android:id="@+id/textsub3card"
+                android:text="offers of the day"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="93dp"
+                android:text="2500"
+                android:textStyle="bold"
+
+                android:layout_marginTop="120dp"
+                android:textSize="8dp"
+
+                android:id="@+id/textrupees3"
+                android:textColor="#1B751D"
+
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+
+                android:layout_toRightOf="@+id/textrupees3"
+
+                android:layout_marginTop="120dp"
+
+                android:src="@drawable/ic_rupees"
+
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
